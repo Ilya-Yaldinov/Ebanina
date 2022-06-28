@@ -6,12 +6,11 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner in = new Scanner(System.in);
         int input = in.nextInt();
-        long start = System.currentTimeMillis();
+        long startTime = System.currentTimeMillis();
         int output = minMultipliers(input);
         System.out.println(output);
-        long finish = System.currentTimeMillis();
-        long elapsed = finish - start;
-        System.out.println("Прошло времени, мс: " + elapsed);
+        long endTime = System.currentTimeMillis();
+        System.out.println("Total execution time: " + (endTime-startTime) + "ms");
     }
 
     public static int minMultipliers(int input){
